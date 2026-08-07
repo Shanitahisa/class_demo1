@@ -5,7 +5,7 @@ name: hello world work flow
  on :
   # triggers on push to a branch 
   push: 
-    branches:[dev, staging]
+    branches:[main]
 
   # allows manual triggering from the actions tab
   workflow_dispatch:
@@ -15,7 +15,7 @@ jobs:
   # job id or name 
   greet:
   # the type of runner to use 
-    runs-on: ubuntu-Latest
+    runs-on: ubuntu-latest
     # steps to execute this job
     steps: 
       - name: say hello
