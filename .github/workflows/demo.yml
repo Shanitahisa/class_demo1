@@ -1,1 +1,25 @@
-Hello!
+# name of the workflow(appears in the actions tab)
+name: hello world work flow 
+
+# events that trigger this work flow 
+ on :
+  # triggers on push to a branch 
+  push: 
+    branches:[dev, staging]
+
+  # allows manual triggering from the actions tab
+  workflow_dispatch:
+
+# jobs to run 
+jobs:
+  # job id or name 
+  greet:
+  # the type of runner to use 
+    runs-on: ubuntu-Latest
+    # steps to execute this job
+    steps: 
+      - name: say hello
+        run: echo "hello world!"
+
+
+      
