@@ -2,7 +2,7 @@
 name: hello world work flow 
 
 # events that trigger this work flow 
- on :
+on :
   # triggers on push to a branch 
   push: 
     branches:[main]
